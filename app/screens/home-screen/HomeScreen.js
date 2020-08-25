@@ -1,10 +1,13 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
+
+import Header from './components/Header';
+import Screen from '../../components/Screen';
 
 function HomeScreen(props) {
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Header />
     </View>
   );
 }
