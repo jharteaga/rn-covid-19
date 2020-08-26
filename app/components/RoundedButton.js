@@ -1,14 +1,15 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
+import colors from '../config/colors';
 import Icon from './Icon';
 
 function RoundedButton({ color, icon, title }) {
   return (
-    <View style={[styles.container, { backgroundColor: color }]}>
-      <Icon color="#FFFFFF" name={icon} size={25} />
+    <TouchableOpacity style={[styles.container, { backgroundColor: color }]}>
+      <Icon color={colors.secondary} name={icon} size={21} />
       <Text style={styles.text}>{title}</Text>
-    </View>
+    </TouchableOpacity>
   );
 }
 
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     width: 155,
   },
   text: {
-    color: '#FFFFFF',
+    color: colors.secondary,
     fontSize: 15,
     marginLeft: 10,
   },

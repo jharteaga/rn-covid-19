@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
+
+import colors from '../../config/colors';
 
 function StatisticsScreen(props) {
   return (
@@ -11,12 +13,12 @@ function StatisticsScreen(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#473F97',
+    backgroundColor: colors.primary,
     flex: 1,
     justifyContent: 'flex-end',
   },
   bottom: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.secondary,
     width: Dimensions.get('screen').width,
     height: 285,
     borderTopLeftRadius: 40,

@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
+import colors from '../../config/colors';
 import Header from './components/Header';
 
 function HomeScreen(props) {
@@ -12,7 +13,7 @@ function HomeScreen(props) {
 }
 
 const styles = StyleSheet.create({
-  container: { backgroundColor: '#FFFFFF', flex: 1 },
+  container: { backgroundColor: colors.secondary, flex: 1 },
 });
 
 export default HomeScreen;
