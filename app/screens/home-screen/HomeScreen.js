@@ -3,11 +3,13 @@ import { StyleSheet, View } from 'react-native';
 
 import colors from '../../config/colors';
 import Header from './components/Header';
+import Prevention from './components/Prevention';
 
 function HomeScreen(props) {
   return (
     <View style={styles.container}>
       <Header />
+      <Prevention />
     </View>
   );
 }
