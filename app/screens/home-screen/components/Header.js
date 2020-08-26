@@ -2,6 +2,7 @@ import React from 'react';
 import { Dimensions, StyleSheet, View, Text } from 'react-native';
 
 import Menu from '../../../components/Menu';
+import RoundedButton from '../../../components/RoundedButton';
 
 function Header(props) {
   return (
@@ -13,6 +14,7 @@ function Header(props) {
         If you feel sick with any of covid-19 symptoms, please call or SMS us
         immediately for help.
       </Text>
+      <RoundedButton color="#FF4D58" icon="phone" title="Call Now" />
     </View>
   );
 }
