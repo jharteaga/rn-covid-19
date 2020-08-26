@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Dimensions } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import colors from '../../config/colors';
 
@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
   },
   bottom: {
     backgroundColor: colors.secondary,
-    width: Dimensions.get('screen').width,
-    height: 285,
+    width: '100%',
+    height: 260,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
   },

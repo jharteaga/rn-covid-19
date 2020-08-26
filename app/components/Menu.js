@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 24,
-    marginTop: StatusBar.currentHeight + 10,
+    marginTop: StatusBar.currentHeight + 20,
   },
 });
 

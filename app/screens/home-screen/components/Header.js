@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 import colors from '../../../config/colors';
 import CallButton from './CallButton';
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: colors.primary,
-    width: Dimensions.get('screen').width,
-    height: 358,
+    width: '100%',
+    height: 320,
     borderBottomRightRadius: 40,
     borderBottomLeftRadius: 40,
   },
@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '700',
     marginLeft: 24,
-    marginTop: 30,
+    marginTop: 20,
   },
   text: {
     color: colors.secondary,
     fontSize: 14,
-    marginLeft: 24,
+    marginHorizontal: 24,
     marginTop: 15,
     opacity: 0.8,
   },
