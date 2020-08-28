@@ -8,6 +8,10 @@ const colors = {
   green: '#4CD97B',
   aqua: '#4DB5FF',
   purple: '#9059FF',
+  linearGradient: {
+    color1: '#56549E',
+    color2: '#AEA1E5',
+  },
 };
 
 export default colors;
