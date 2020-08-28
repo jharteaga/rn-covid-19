@@ -9,8 +9,8 @@ const colors = {
   aqua: '#4DB5FF',
   purple: '#9059FF',
   linearGradient: {
-    color1: '#56549E',
-    color2: '#AEA1E5',
+    dark: '#56549E',
+    light: '#AEA1E5',
   },
 };
 

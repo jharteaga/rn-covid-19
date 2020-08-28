@@ -8,15 +8,10 @@ function TestInformation(props) {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={[colors.linearGradient.color2, colors.linearGradient.color1]}
+        colors={[colors.linearGradient.light, colors.linearGradient.dark]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
-        style={{
-          position: 'absolute',
-          width: 327,
-          height: 104,
-          borderRadius: 16,
-        }}
+        style={styles.linearGradient}
       >
         <View style={styles.row}>
           <Image
@@ -49,6 +44,12 @@ const styles = StyleSheet.create({
     bottom: 12,
     width: 111,
     height: 116,
+  },
+  linearGradient: {
+    position: 'absolute',
+    width: 327,
+    height: 104,
+    borderRadius: 16,
   },
   row: {
     flexDirection: 'row',
