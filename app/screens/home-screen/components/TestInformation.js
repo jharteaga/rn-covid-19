@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     height: 104,
     borderRadius: 16,
     alignSelf: 'center',
-    marginTop: 40,
+    marginTop: 50,
   },
   img: {
     marginRight: 10,

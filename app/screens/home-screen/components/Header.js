@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: colors.primary,
     width: '100%',
-    height: 325,
+    height: 345,
     borderBottomRightRadius: 40,
     borderBottomLeftRadius: 40,
   },
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '700',
     marginLeft: 24,
-    marginTop: 30,
+    marginTop: 20,
   },
 });
 
