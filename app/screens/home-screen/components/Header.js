@@ -5,12 +5,16 @@ import colors from '../../../config/colors';
 import CallButton from './CallButton';
 import Menu from '../../../components/Menu';
 import SmsButton from './SmsButton';
+import CountryPicker from './CountryPicker';
 
 function Header(props) {
   return (
     <View style={styles.header}>
       <Menu />
-      <Text style={styles.title}>Covid-19</Text>
+      <View style={styles.row}>
+        <Text style={styles.title}>Covid-19</Text>
+        <CountryPicker style={styles.picker} />
+      </View>
       <Text style={styles.subtitle}>Are you feeling sick?</Text>
       <Text style={styles.text}>
         If you feel sick with any of covid-19 symptoms, please call or SMS us
@@ -37,12 +41,20 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 40,
     borderBottomLeftRadius: 40,
   },
+  picker: {
+    marginRight: 30,
+  },
   subtitle: {
     color: colors.secondary,
     fontSize: 20,
     fontWeight: '700',
     marginLeft: 24,
     marginTop: 20,
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
   },
   text: {
     color: colors.secondary,
