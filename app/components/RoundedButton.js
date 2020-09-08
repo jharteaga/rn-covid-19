@@ -1,8 +1,8 @@
-import React from 'react';
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-import colors from '../config/colors';
-import Icon from './Icon';
+import colors from "../config/colors";
+import Icon from "./Icon";
 
 function RoundedButton({ color, icon, title }) {
   return (
@@ -15,9 +15,9 @@ function RoundedButton({ color, icon, title }) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 80,
     height: 48,
     width: 155,
@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     color: colors.secondary,
     fontSize: 15,
     marginLeft: 10,
+    fontWeight: "bold",
   },
 });
 
