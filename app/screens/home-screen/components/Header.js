@@ -32,17 +32,17 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     flexDirection: "row",
     justifyContent: "space-evenly",
-    marginVertical: 20,
+    marginTop: 23,
   },
   header: {
     backgroundColor: colors.primary,
     width: "100%",
-    height: 345,
+    height: 375,
     borderBottomRightRadius: 40,
     borderBottomLeftRadius: 40,
   },
   picker: {
-    marginRight: 30,
+    marginRight: 35,
   },
   subtitle: {
     color: colors.secondary,
@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 24,
     marginTop: 15,
     opacity: 0.8,
+    lineHeight: 22,
   },
   title: {
     color: colors.secondary,

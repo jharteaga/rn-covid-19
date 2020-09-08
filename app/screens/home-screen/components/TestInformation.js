@@ -1,8 +1,8 @@
-import React from 'react';
-import { StyleSheet, View, Image, Text, useColorScheme } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import React from "react";
+import { StyleSheet, View, Image, Text, useColorScheme } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-import colors from '../../../config/colors';
+import colors from "../../../config/colors";
 
 function TestInformation(props) {
   return (
@@ -12,49 +12,49 @@ function TestInformation(props) {
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
         style={styles.linearGradient}
-      >
-        <View style={styles.row}>
-          <Image
-            source={require('../../../assets/img/woman-test.png')}
-            style={styles.img}
-          />
-          <View>
-            <Text style={styles.title}>Do your own test!</Text>
-            <Text style={styles.subtitle}>
-              Follow the instructions to do your own test.
-            </Text>
-          </View>
+      ></LinearGradient>
+      <View style={styles.row}>
+        <Image
+          source={require("../../../assets/img/woman-test.png")}
+          style={styles.img}
+        />
+        <View>
+          <Text style={styles.title}>Do your own test!</Text>
+          <Text style={styles.subtitle}>
+            Follow the instructions to do your own test.
+          </Text>
         </View>
-      </LinearGradient>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    width: 327,
+    width: 350,
     height: 104,
     borderRadius: 16,
-    alignSelf: 'center',
+    alignSelf: "center",
     marginTop: 50,
   },
   img: {
-    marginRight: 10,
-    position: 'relative',
-    bottom: 12,
-    width: 111,
-    height: 116,
+    marginRight: 15,
+    bottom: 21,
+    width: 120,
+    height: 125,
+    position: "relative",
   },
   linearGradient: {
-    position: 'absolute',
-    width: 327,
+    width: 350,
     height: 104,
     borderRadius: 16,
   },
   row: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    position: "absolute",
+    marginHorizontal: 15,
   },
   subtitle: {
     color: colors.secondary,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.secondary,
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginVertical: 10,
   },
 });

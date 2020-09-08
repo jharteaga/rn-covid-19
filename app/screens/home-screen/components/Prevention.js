@@ -1,7 +1,7 @@
-import React from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Text, Image } from "react-native";
 
-import colors from '../../../config/colors';
+import colors from "../../../config/colors";
 
 function Prevention(props) {
   return (
@@ -10,21 +10,21 @@ function Prevention(props) {
       <View style={styles.imagesContainer}>
         <View>
           <Image
-            source={require('../../../assets/img/avoid-close-contact.png')}
+            source={require("../../../assets/img/avoid-close-contact.png")}
             style={styles.image}
           />
           <Text style={styles.text}>Avoid close contact</Text>
         </View>
         <View>
           <Image
-            source={require('../../../assets/img/clean-your-hands.png')}
+            source={require("../../../assets/img/clean-your-hands.png")}
             style={styles.image}
           />
           <Text style={styles.text}>Clean your hands often</Text>
         </View>
         <View>
           <Image
-            source={require('../../../assets/img/wear-a-mask.png')}
+            source={require("../../../assets/img/wear-a-mask.png")}
             style={styles.image}
           />
           <Text style={styles.text}>Wear a facemask</Text>
@@ -37,23 +37,23 @@ function Prevention(props) {
 const styles = StyleSheet.create({
   container: { marginTop: 30 },
   image: {
-    alignSelf: 'center',
+    alignSelf: "center",
   },
   imagesContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginHorizontal: 24,
-    marginTop: 20,
+    marginTop: 35,
   },
   text: {
     marginTop: 5,
-    textAlign: 'center',
+    textAlign: "center",
     width: 90,
   },
   title: {
     color: colors.black,
     fontSize: 20,
-    fontWeight: '600',
+    fontWeight: "600",
     marginLeft: 24,
   },
 });

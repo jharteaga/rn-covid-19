@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   StyleSheet,
   View,
@@ -8,30 +8,32 @@ import {
   Button,
   FlatList,
   Image,
-} from 'react-native';
+  Platform,
+  StatusBar,
+} from "react-native";
 
-import colors from '../../../config/colors';
-import Icon from '../../../components/Icon';
-import CountryItem from './CountryItem';
+import colors from "../../../config/colors";
+import Icon from "../../../components/Icon";
+import CountryItem from "./CountryItem";
 
 const countries = [
   {
     id: 1,
-    name: 'SAL',
-    flag: 'https://restcountries.eu/data/slv.svg',
-    code: 'sv',
+    name: "SAL",
+    flag: "https://restcountries.eu/data/slv.svg",
+    code: "sv",
   },
   {
     id: 2,
-    name: 'ARG',
-    flag: 'https://restcountries.eu/data/arg.svg',
-    code: 'ar',
+    name: "ARG",
+    flag: "https://restcountries.eu/data/arg.svg",
+    code: "ar",
   },
   {
     id: 3,
-    name: 'CAN',
-    flag: 'https://restcountries.eu/data/can.svg',
-    code: 'ca',
+    name: "CAN",
+    flag: "https://restcountries.eu/data/can.svg",
+    code: "ca",
   },
 ];
 
@@ -60,6 +62,7 @@ function CountryPicker({ style = {} }) {
         </View>
       </TouchableWithoutFeedback>
       <Modal visible={modalVisible} animationType="slide">
+        <StatusBar barStyle="dark" />
         <View style={styles.modalContainer}>
           <Button title="Close" onPress={() => setModalVisible(false)} />
           <FlatList
@@ -77,10 +80,10 @@ function CountryPicker({ style = {} }) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: colors.secondary,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
     width: 116,
     height: 40,
     borderRadius: 60,
@@ -93,10 +96,11 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     flex: 1,
+    paddingTop: Platform.OS === "ios" ? 40 : 0,
   },
   text: {
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: 13,
+    fontWeight: "bold",
     marginLeft: 5,
   },
 });
