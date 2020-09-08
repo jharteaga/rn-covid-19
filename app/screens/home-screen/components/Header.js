@@ -1,11 +1,11 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
 
-import colors from '../../../config/colors';
-import CallButton from './CallButton';
-import Menu from '../../../components/Menu';
-import SmsButton from './SmsButton';
-import CountryPicker from './CountryPicker';
+import colors from "../../../config/colors";
+import CallButton from "./CallButton";
+import Menu from "../../../components/Menu";
+import SmsButton from "./SmsButton";
+import CountryPicker from "./CountryPicker";
 
 function Header(props) {
   return (
@@ -30,13 +30,13 @@ function Header(props) {
 
 const styles = StyleSheet.create({
   buttonsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     marginVertical: 20,
   },
   header: {
     backgroundColor: colors.primary,
-    width: '100%',
+    width: "100%",
     height: 345,
     borderBottomRightRadius: 40,
     borderBottomLeftRadius: 40,
@@ -47,14 +47,15 @@ const styles = StyleSheet.create({
   subtitle: {
     color: colors.secondary,
     fontSize: 20,
-    fontWeight: '700',
+    fontWeight: "700",
     marginLeft: 24,
     marginTop: 20,
   },
   row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'baseline',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    marginTop: 20,
   },
   text: {
     color: colors.secondary,
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.secondary,
     fontSize: 24,
-    fontWeight: '700',
+    fontWeight: "700",
     marginLeft: 24,
     marginTop: 20,
   },

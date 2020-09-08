@@ -1,8 +1,14 @@
-import React from 'react';
-import { StyleSheet, View, StatusBar, TouchableOpacity } from 'react-native';
+import React from "react";
+import {
+  StyleSheet,
+  View,
+  StatusBar,
+  TouchableOpacity,
+  Platform,
+} from "react-native";
 
-import colors from '../config/colors';
-import Icon from './Icon';
+import colors from "../config/colors";
+import Icon from "./Icon";
 
 function Menu(props) {
   return (
@@ -19,10 +25,10 @@ function Menu(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     paddingHorizontal: 24,
-    marginTop: StatusBar.currentHeight + 20,
+    paddingTop: Platform.OS === "ios" ? 50 : StatusBar.currentHeight + 5,
   },
 });
 
