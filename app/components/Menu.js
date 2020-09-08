@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     paddingHorizontal: 24,
-    paddingTop: Platform.OS === "ios" ? 70 : StatusBar.currentHeight + 5,
+    paddingTop: Platform.OS === "ios" ? 70 : StatusBar.currentHeight + 20,
   },
 });
 

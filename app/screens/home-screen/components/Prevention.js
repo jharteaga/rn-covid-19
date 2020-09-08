@@ -35,7 +35,7 @@ function Prevention(props) {
 }
 
 const styles = StyleSheet.create({
-  container: { marginTop: 30 },
+  container: { marginTop: 20 },
   image: {
     alignSelf: "center",
   },

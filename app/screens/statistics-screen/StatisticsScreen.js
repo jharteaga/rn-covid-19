@@ -1,11 +1,16 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
 
-import colors from '../../config/colors';
+import colors from "../../config/colors";
+import Menu from "../../components/Menu";
+import TabView from "./components/TabView";
 
 function StatisticsScreen(props) {
   return (
     <View style={styles.container}>
+      <Menu />
+      <Text style={styles.title}>Statistics</Text>
+      <TabView style={styles.tabview} />
       <View style={styles.bottom}></View>
     </View>
   );
@@ -15,14 +20,26 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.primary,
     flex: 1,
-    justifyContent: 'flex-end',
   },
   bottom: {
     backgroundColor: colors.secondary,
-    width: '100%',
-    height: 260,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
+    height: 260,
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+  },
+  tabview: {
+    alignSelf: "center",
+    marginTop: 20,
+  },
+  title: {
+    color: colors.secondary,
+    fontWeight: "700",
+    fontSize: 20,
+    marginTop: 30,
+    marginLeft: 23,
   },
 });
 
