@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 import colors from "../../config/colors";
 import Header from "./components/Header";
@@ -11,8 +11,10 @@ function HomeScreen(props) {
     <>
       <View style={styles.container}>
         <Header />
-        <Prevention />
-        <TestInformation />
+        <ScrollView>
+          <Prevention />
+          <TestInformation />
+        </ScrollView>
       </View>
     </>
   );
