@@ -17,6 +17,8 @@ const styles = StyleSheet.create({
   container: {
     height: 100,
     borderRadius: 8,
+    marginHorizontal: 7,
+    marginVertical: 2,
   },
   column: {
     flex: 1,

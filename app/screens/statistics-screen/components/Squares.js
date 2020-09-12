@@ -11,7 +11,10 @@ const Squares = () => {
         <Square
           title="Affected"
           subtitle="336,851"
-          containerStyle={{ backgroundColor: colors.orange, width: 180 }}
+          containerStyle={{
+            backgroundColor: colors.orange,
+            width: 180,
+          }}
           textStyle={{ fontSize: 24 }}
         />
         <Square
@@ -30,7 +33,7 @@ const Squares = () => {
         <Square
           title="Active"
           subtitle="301,154"
-          containerStyle={{ backgroundColor: colors.blue, width: 115 }}
+          containerStyle={{ backgroundColor: colors.aqua, width: 115 }}
         />
         <Square
           title="Serious"
@@ -46,7 +49,7 @@ const styles = StyleSheet.create({
   row: {
     marginTop: 10,
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    justifyContent: "center",
   },
 });
 

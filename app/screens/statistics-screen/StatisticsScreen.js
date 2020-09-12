@@ -5,6 +5,7 @@ import colors from "../../config/colors";
 import Menu from "../../components/Menu";
 import TabView from "./components/TabView";
 import Squares from "./components/Squares";
+import Options from "./components/Options";
 
 function StatisticsScreen(props) {
   return (
@@ -12,8 +13,11 @@ function StatisticsScreen(props) {
       <Menu />
       <Text style={styles.title}>Statistics</Text>
       <TabView style={styles.tabview} />
+      <Options />
       <Squares />
-      <View style={styles.bottom}></View>
+      <View style={styles.bottom}>
+        <Text style={styles.graphTitle}>Daily New Cases</Text>
+      </View>
     </View>
   );
 }
@@ -31,6 +35,12 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 0,
     width: "100%",
+  },
+  graphTitle: {
+    top: 40,
+    left: 20,
+    fontWeight: "600",
+    fontSize: 18,
   },
   tabview: {
     alignSelf: "center",
