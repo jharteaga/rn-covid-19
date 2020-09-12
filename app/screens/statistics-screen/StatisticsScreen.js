@@ -4,6 +4,7 @@ import { StyleSheet, View, Text } from "react-native";
 import colors from "../../config/colors";
 import Menu from "../../components/Menu";
 import TabView from "./components/TabView";
+import Squares from "./components/Squares";
 
 function StatisticsScreen(props) {
   return (
@@ -11,6 +12,7 @@ function StatisticsScreen(props) {
       <Menu />
       <Text style={styles.title}>Statistics</Text>
       <TabView style={styles.tabview} />
+      <Squares />
       <View style={styles.bottom}></View>
     </View>
   );
