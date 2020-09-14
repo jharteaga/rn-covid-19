@@ -6,7 +6,7 @@ import colors from "../../../config/colors";
 
 const Squares = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.row}>
         <Square
           title="Affected"

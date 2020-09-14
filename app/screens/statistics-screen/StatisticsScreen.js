@@ -6,6 +6,7 @@ import Menu from "../../components/Menu";
 import TabView from "./components/TabView";
 import Squares from "./components/Squares";
 import Options from "./components/Options";
+import BarChart from "./components/BarChart";
 
 function StatisticsScreen(props) {
   return (
@@ -16,7 +17,10 @@ function StatisticsScreen(props) {
       <Options />
       <Squares />
       <View style={styles.bottom}>
-        <Text style={styles.graphTitle}>Daily New Cases</Text>
+        <Text style={styles.chartTitle}>Daily New Cases</Text>
+        <View style={styles.chart}>
+          <BarChart />
+        </View>
       </View>
     </View>
   );
@@ -27,6 +31,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
     flex: 1,
   },
+  chart: {
+    marginTop: 10,
+    alignSelf: "center",
+    marginLeft: 20,
+  },
   bottom: {
     backgroundColor: colors.secondary,
     borderTopLeftRadius: 40,
@@ -36,11 +45,12 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: "100%",
   },
-  graphTitle: {
-    top: 40,
+  chartTitle: {
+    top: 30,
     left: 20,
     fontWeight: "600",
-    fontSize: 18,
+    fontSize: 19,
+    letterSpacing: 0.8,
   },
   tabview: {
     alignSelf: "center",
