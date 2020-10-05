@@ -4,9 +4,12 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import colors from "../config/colors";
 import Icon from "./Icon";
 
-function RoundedButton({ color, icon, title }) {
+function RoundedButton({ color, icon, title, onPress }) {
   return (
-    <TouchableOpacity style={[styles.container, { backgroundColor: color }]}>
+    <TouchableOpacity
+      style={[styles.container, { backgroundColor: color }]}
+      onPress={onPress}
+    >
       <Icon color={colors.secondary} name={icon} size={21} />
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
